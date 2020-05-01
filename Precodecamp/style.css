@@ -1,0 +1,65 @@
+.tooltip {
+    margin: 20px 0;
+    display: inline-block;
+    position: relative;
+}
+
+.tooltip:hover {
+    color: #888888;
+}
+
+.tooltip .texttooltip {
+    visibility: hidden;
+    padding: 10px 10px;
+    background-color: rgba(100,200,200,0.2);
+    border-radius: 20px;
+    color: #000000;
+    position: absolute;
+    width: max-content;
+}
+
+.tooltip:hover .texttooltip {
+    visibility: visible;
+}
+
+.pagination a {
+    color: black;
+    text-decoration: none;
+}
+
+.pagination a:hover {
+    color: #888888;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    display: inline;
+    background-color: cadetblue;
+}
+
+li {
+    display: inline;
+    padding: 10px 10px;
+    background-color: cadetblue;
+}
+
+li:hover {
+    background-color: darkcyan;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4,9%);
+    margin: auto 0;
+    justify-content: start;
+}
+
+body {
+    margin: auto 0;
+}
