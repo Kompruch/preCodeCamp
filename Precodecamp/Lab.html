@@ -4,6 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        span {
+            color: red;
+        }
+    </style>
     <title>LABHTML</title>
 </head>
 
@@ -72,56 +77,20 @@
     <table border="1px">
         <thead>
             <tr>
-                <th>h</th>
-                <th>div</th>
-                <th>img</th>
-                <th>ul</th>
-                <th>ol</th>
-                <th>table</th>
-                <th>form</th>
-                <th>button</th>
+                <th>hr <span>vs</span> br</th>
+                <th>ul <span>vs</span> ol</th>
+                <th>select <span>vs</span> checkbox vs radio button</th>
+                <th>div <span>vs</span> span</th>
+                <th>script <span>vs</span> style</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>global attribute</td>
-                <td>global attribute</td>
-                <td>'alt' defines an alternative text description of the image</td>
-                <td>global attribute</td>
-                <td>'reversed' the list’s items are in reverse order</td>
-                <td>global attribute</td>
-                <td>accept-charset Space-separated character encodings the server accepts.</td>
-                <td>value Defines the value associated with the button’s name when it’s submitted with the form data.</td>
-            </tr>
-            <tr>
-                <td>id</td>
-                <td>id</td>
-                <td>'height' The intrinsic height of the image</td>
-                <td>id</td>
-                <td>'start' An integer to start counting from for the list items</td>
-                <td>id</td>
-                <td>action The URL that processes the form submission</td>
-                <td>disabled prevents the user from interacting with the button:</td>
-            </tr>
-            <tr>
-                <td>class</td>
-                <td>class</td>
-                <td>'src' The image URL</td>
-                <td>class</td>
-                <td>'type' Sets the numbering type</td>
-                <td>class</td>
-                <td>autocomplete Indicates whether input elements can by default have their values automatically completed by the browser</td>
-                <td>type The default behavior of the button.</td>
-            </tr>
-            <tr>
-                <td>style</td>
-                <td>style</td>
-                <td>'width' The intrinsic width of the image in pixels</td>
-                <td>style</td>
-                <td>style</td>
-                <td>method The HTTP method to submit the form with.</td>
-                <td>style</td>
-                <td>name The name of the button, submitted as a pair with the button’s value as part of the form data.</td>
+                <td>thematic break between elements <span>vs</span> a line break</td>
+                <td>unorder list <span>vs</span> order list</td>
+                <td> A drop-down list located outside a form (but still a part of the form) <span>vs</span> A check box allowing single values to be selected/deselected <span>vs</span> A radio button, allowing a single value to be selected out of multiple choices with the same name value.</td>
+                <td>the generic container for flow content (block element) <span>vs</span> a generic inline container for phrasing content (inline element)</td>
+                <td>'script is used to embed or reference executable code <span>vs</span> 'style' allows style sheets to be embedded directly within SVG content</td>
             </tr>
         </tbody>
     </table>
@@ -132,56 +101,70 @@
     <table border="1px">
         <thead>
             <tr>
-                <th>h</th>
-                <th>div</th>
-                <th>img</th>
-                <th>ul</th>
-                <th>ol</th>
-                <th>table</th>
-                <th>form</th>
-                <th>button</th>
+                <th>Type</th>
+                <th>Description</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>global attribute</td>
-                <td>global attribute</td>
-                <td>'alt' defines an alternative text description of the image</td>
-                <td>global attribute</td>
-                <td>'reversed' the list’s items are in reverse order</td>
-                <td>global attribute</td>
-                <td>accept-charset Space-separated character encodings the server accepts.</td>
-                <td>value Defines the value associated with the button’s name when it’s submitted with the form data.</td>
+                <td>button</td>
+                <td>A push button with no default behavior displaying</td>
             </tr>
             <tr>
-                <td>id</td>
-                <td>id</td>
-                <td>'height' The intrinsic height of the image</td>
-                <td>id</td>
-                <td>'start' An integer to start counting from for the list items</td>
-                <td>id</td>
-                <td>action The URL that processes the form submission</td>
-                <td>disabled prevents the user from interacting with the button:</td>
+                <td>checkbox</td>
+                <td>A check box allowing single values to be selected/deselected.</td>
             </tr>
             <tr>
-                <td>class</td>
-                <td>class</td>
-                <td>'src' The image URL</td>
-                <td>class</td>
-                <td>'type' Sets the numbering type</td>
-                <td>class</td>
-                <td>autocomplete Indicates whether input elements can by default have their values automatically completed by the browser</td>
-                <td>type The default behavior of the button.</td>
+                <td>color</td>
+                <td>A control for specifying a color; opening a color picker when active in supporting browsers.</td>
             </tr>
             <tr>
-                <td>style</td>
-                <td>style</td>
-                <td>'width' The intrinsic width of the image in pixels</td>
-                <td>style</td>
-                <td>style</td>
-                <td>method The HTTP method to submit the form with.</td>
-                <td>style</td>
-                <td>name The name of the button, submitted as a pair with the button’s value as part of the form data.</td>
+                <td>date</td>
+                <td>A control for entering a date (year, month, and day, with no time).</td>
+            </tr>
+            <tr>
+                <td>email</td>
+                <td>A field for editing an email address.</td>
+            </tr>
+            <tr>
+                <td>file</td>
+                <td>A control that lets the user select a file.</td>
+            </tr>
+            <tr>
+                <td>hidden</td>
+                <td>A control that is not displayed but whose value is submitted to the server.</td>
+            </tr>
+            <tr>
+                <td>image</td>
+                <td>A graphical submit button.</td>
+            </tr>
+            <tr>
+                <td>password</td>
+                <td>A single-line text field whose value is obscured. Will alert user if site is not secure.</td>
+            </tr>
+            <tr>
+                <td>radio</td>
+                <td>A radio button, allowing a single value to be selected out of multiple choices with the same name value.</td>
+            </tr>
+            <tr>
+                <td>range</td>
+                <td>A control for entering a number whose exact value is not important.</td>
+            </tr>
+            <tr>
+                <td>search</td>
+                <td>A single-line text field for entering search strings.</td>
+            </tr>
+            <tr>
+                <td>submit</td>
+                <td>A button that submits the form.</td>
+            </tr>
+            <tr>
+                <td>text</td>
+                <td>A single-line text field.</td>
+            </tr>
+            <tr>
+                <td>time</td>
+                <td>A control for entering a time value with no time zone.</td>
             </tr>
         </tbody>
     </table>
