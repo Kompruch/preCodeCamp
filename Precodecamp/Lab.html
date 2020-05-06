@@ -11,9 +11,12 @@
         table,
         td,
         th {
-            text-align: justify;
             border: 2px solid black;
             border-collapse: collapse;
+        }
+        input[type="image"] {
+            width: 30px;
+            height: 30px;
         }
     </style>
     <title>LABHTML</title>
@@ -36,44 +39,44 @@
         </thead>
         <tbody>
             <tr>
-                <td>global attribute</td>
-                <td>global attribute</td>
-                <td>'alt' defines an alternative text description of the image</td>
-                <td>global attribute</td>
-                <td>'reversed' the list’s items are in reverse order</td>
-                <td>global attribute</td>
-                <td>accept-charset Space-separated character encodings the server accepts.</td>
+                <td>global attribute เป็น attribute ที่มีในทุก html element เช่น class id</td>
+                <td>global attribute เป็น attribute ที่มีในทุก html element เช่น class id</td>
+                <td>'alt' ใส่ชื่อหรือคำอธิบายเกี่ยวกับภาพทำ</td>
+                <td>global attribute เป็น attribute ที่มีในทุก html element เช่น class id</td>
+                <td>'reversed' สลับการเรียงลำดับเช่นจากล่างขึ้นบน</td>
+                <td>global attribute เป็น attribute ที่มีในทุก html element เช่น class id</td>
+                <td>'accept-charset' รหัสอักขระที่ยอมรับเช่น iso-8859-5</td>
                 <td>value Defines the value associated with the button’s name when it’s submitted with the form data.</td>
             </tr>
             <tr>
-                <td>id</td>
-                <td>id</td>
-                <td>'height' The intrinsic height of the image</td>
-                <td>id</td>
-                <td>'start' An integer to start counting from for the list items</td>
-                <td>id</td>
+                <td>dir กำหนดทิศทางของ text ใน element</td>
+                <td>id การตั้งค่า id ให้กับ element 1 element มีได้ 1 id</td>
+                <td>'height' ตั้งค่าความสูงของภาพ</td>
+                <td>id การตั้งค่า id ให้กับ element 1 element มีได้ 1 id</td>
+                <td>'start'ตั้งค่าให้เริ่มนับที่ตัวเลขไหน</td>
+                <td>id การตั้งค่า id ให้กับ element 1 element มีได้ 1 id</td>
                 <td>action The URL that processes the form submission</td>
-                <td>disabled prevents the user from interacting with the button:</td>
+                <td>disabled ทำให้ผู้ใช้ไม่สารถกดปุ่มได้</td>
             </tr>
             <tr>
-                <td>class</td>
-                <td>class</td>
-                <td>'src' The image URL</td>
-                <td>class</td>
-                <td>'type' Sets the numbering type</td>
-                <td>class</td>
-                <td>autocomplete Indicates whether input elements can by default have their values automatically completed by the browser</td>
-                <td>type The default behavior of the button.</td>
+                <td>draggable กำหนดให้ element สามารถทำการ drag drop ได้ ผ่าน drag and drop API</td>
+                <td>autocapitalize กำหนดให้มีการใช้คำขึ้นต้นตัวพิมใหญ่โดยอัตโนมัติ</td>
+                <td>'src' URL หรือ directory ของภาพ</td>
+                <td>class กำหนดคลาสให้กับ element</td>
+                <td>'type' ตั้งค่ารูปแบบตัวเลขหรือตัวหนังสือแบบลำดับ</td>
+                <td>class กำหนดคลาสให้กับ element</td>
+                <td>autocomplete กำหนด input element ให้มีค่าเริ่มต้น</td>
+                <td>type การเลือกประเภทของปุ่ม เช่น submit reset</td>
             </tr>
             <tr>
-                <td>style</td>
-                <td>style</td>
-                <td>'width' The intrinsic width of the image in pixels</td>
-                <td>style</td>
-                <td>style</td>
-                <td>method The HTTP method to submit the form with.</td>
-                <td>style</td>
-                <td>name The name of the button, submitted as a pair with the button’s value as part of the form data.</td>
+                <td>style การกำหนด CSS style ให้กับ element</td>
+                <td>spellcheck ให้มีการเช็คคำสกดถูกผิด</td>
+                <td>'width' กำหนดความกว้างของภาพ</td>
+                <td>style การกำหนด CSS style ให้กับ element</td>
+                <td>style การกำหนด CSS style ให้กับ element</td>
+                <td>method กระบวนการทำงาน HTTP ที่ใช้ submit form</td>
+                <td>style การกำหนด CSS style ให้กับ element</td>
+                <td>name กำหนดชื่อให้กับ button</td>
             </tr>
         </tbody>
     </table>
@@ -93,11 +96,11 @@
         </thead>
         <tbody>
             <tr>
-                <td>thematic break between elements <span>vs</span> a line break</td>
-                <td>unorder list <span>vs</span> order list</td>
-                <td> A drop-down list located outside a form (but still a part of the form) <span>vs</span> A check box allowing single values to be selected/deselected <span>vs</span> A radio button, allowing a single value to be selected out of multiple choices with the same name value.</td>
-                <td>the generic container for flow content (block element) <span>vs</span> a generic inline container for phrasing content (inline element)</td>
-                <td>'script is used to embed or reference executable code <span>vs</span> 'style' allows style sheets to be embedded directly within SVG content</td>
+                <td>hr ใช้สร้างเส้นเพื่อแบ่งหน้า page <span>vs</span> br ใช้เพื่อให้เกิดการแบ่งบรรทัด เพื่อตบบรรทัด</td>
+                <td>unorder list เป็น list  ที่ไม่มีการลำดับ <span>vs</span> order list เป็น list ที่มีการลำดับ</td>
+                <td> select เป็น drop-down list located ให้เลือก <span>vs</span> checkbox เลือกโดยการเช็ค และไม่เช็คได้ <span>vs</span>radio button ให้เลือกระหว่าง radio ที่มี name เดียวกันอันใดอันหนึ่ง</td>
+                <td>div เป็นเหมือน container ที่เป็น block element<span>vs</span> span เป็น container inline element</td>
+                <td>script ใช้เพื่อลิงค์ไปหา script ไฟล์เช่น .js <span>vs</span> style ทำให้สามารถ ใส่ css ลงไปใน ไฟล์ html โดยตรง</td>
             </tr>
         </tbody>
     </table>
@@ -108,74 +111,98 @@
     <table border="1px">
         <thead>
             <tr>
+                <th>Sample</th>
                 <th>Type</th>
                 <th>Description</th>
             </tr>
         </thead>
         <tbody>
             <tr>
+                <td><input type="button" value="click"></td>
                 <td>button</td>
                 <td>A push button with no default behavior displaying</td>
             </tr>
             <tr>
+                <td><input type="checkbox" name="check" id=""></td>
                 <td>checkbox</td>
                 <td>A check box allowing single values to be selected/deselected.</td>
             </tr>
             <tr>
+                <td><input type="color" name="" id=""></td>
                 <td>color</td>
                 <td>A control for specifying a color; opening a color picker when active in supporting browsers.</td>
             </tr>
             <tr>
+                <td><input type="date" name="" id=""></td>
                 <td>date</td>
                 <td>A control for entering a date (year, month, and day, with no time).</td>
             </tr>
             <tr>
+                <td><input type="email" placeholder="email here" name="" id=""></td>
                 <td>email</td>
                 <td>A field for editing an email address.</td>
             </tr>
             <tr>
+                <td><input type="file" name="" id=""></td>
                 <td>file</td>
                 <td>A control that lets the user select a file.</td>
             </tr>
             <tr>
+                <td><input type="hidden" name="hidden"><label for="hidden">It is here but hidden</label></td>
                 <td>hidden</td>
                 <td>A control that is not displayed but whose value is submitted to the server.</td>
             </tr>
             <tr>
+                <td><input type="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRj0YKykMVUC7oGufeb5stgLMJpi2B_hjlVnHj3kJQlrOLuDifw&usqp=CAU" alt=""></td>
                 <td>image</td>
                 <td>A graphical submit button.</td>
             </tr>
             <tr>
+                <td><input type="password" placeholder="password" name="" id=""></td>
                 <td>password</td>
                 <td>A single-line text field whose value is obscured. Will alert user if site is not secure.</td>
             </tr>
             <tr>
+                <td>
+                    <input type="radio" name="cat" id="">
+                    <input type="radio" name="cat" id="">
+                </td>
                 <td>radio</td>
                 <td>A radio button, allowing a single value to be selected out of multiple choices with the same name value.</td>
             </tr>
             <tr>
+                <td><input type="range" name="" id=""></td>
                 <td>range</td>
                 <td>A control for entering a number whose exact value is not important.</td>
             </tr>
             <tr>
+                <td><input type="search" placeholder="search" name="" id=""></td>
                 <td>search</td>
                 <td>A single-line text field for entering search strings.</td>
             </tr>
             <tr>
+                <td><input type="submit" value="submit"></td>
                 <td>submit</td>
                 <td>A button that submits the form.</td>
             </tr>
             <tr>
+                <td><input type="text" placeholder="text" name="" id=""></td>
                 <td>text</td>
                 <td>A single-line text field.</td>
             </tr>
             <tr>
+                <td><input type="time" name="" id=""></td>
                 <td>time</td>
                 <td>A control for entering a time value with no time zone.</td>
             </tr>
         </tbody>
     </table>
 
+
+
+
+
 </body>
 
 </html>
+
