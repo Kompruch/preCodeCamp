@@ -1,0 +1,139 @@
+.headerlist {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    height: auto;
+    background-color: #ebebeb;
+    margin: auto 0;
+}
+
+div.headerlistlink {
+    display: grid;
+    grid-template-columns: repeat(7,minmax(130px, 1fr));
+    justify-content: space-between;
+}
+
+a.linklist {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+div.headerlistlink>a {
+    text-decoration: none;
+    color: #00238c;
+    font-size: small;
+}
+
+body {
+    margin: auto 0;
+}
+
+.headersearch {
+    display: grid;
+    grid-template-columns: 20% 50% 10% 10% 10%;
+    height: 50px;
+    justify-items: center;
+    background-color: thistle;
+}
+
+input[type="search"] {
+    width: auto;
+    height: 200px;
+}
+
+div.slider {
+    display: grid;
+    grid-template-columns: 10% 20% 60% 10%;
+    grid-template-rows: 1fr;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    background-color: seagreen;
+}
+
+div.slider div {
+    background-color: skyblue;
+}
+
+div div.space {
+    background-color: tan;
+}
+
+div.cardcontainer {
+    display: grid;
+    grid-template-columns: 10% repeat(4, 1fr) 10%;
+    justify-content: center;
+    background-color: tan;
+    grid-gap: 5px;
+    padding: 10px;
+}
+
+div.card {
+    background-color: turquoise;
+    text-align: center;
+    border-radius: 10px;
+    height: 30px;
+}
+div.shopheader {
+    display: grid;
+    grid-template-columns: 10% repeat(4, 1fr) 10%;
+    background-color: tomato;
+}
+div.shopheader h3 {
+    grid-column: 2/6;
+}
+
+div.shopheader div {
+    background-color: tan;
+}
+
+div.shopmaincontent {
+    display: grid;
+    grid-template-columns: 10% repeat(6, 1fr) 10%;
+    grid-template-rows: 40px 1fr;
+    background-color: white;
+}
+
+div.shopcontentheader {
+    grid-column: 2/8;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: palegreen;
+
+}
+
+a.btn {
+    align-self: center;
+    justify-self: self-end;
+    border-radius: 3px;
+    border: 1px solid orange;
+    padding: 5px;
+    text-decoration: none;
+    color: orange;
+}
+
+
+div.shopcontent {
+    display: grid;
+    grid-column: 2/8;
+    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+    grid-gap: 1rem;
+}
+
+article.shopitem {
+    display: flex;
+    flex-flow: column;
+    border: 1px solid whitesmoke;
+}
+
+article.shopitem img {
+    height: 150px;
+}
+
+html body {
+    background-color: tan;
+}
